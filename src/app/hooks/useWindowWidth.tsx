@@ -8,7 +8,7 @@ export function useWindowWidth() {
       setWidth(window.innerWidth);
     }
 
-    handleResize(); // set initial width
+    handleResize(); 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
